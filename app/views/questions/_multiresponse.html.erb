@@ -1,0 +1,36 @@
+<%= form_for @question,:remote=>true,:html=>{:name=>"question"} do |f|%>
+	<p>
+		<div class ="row">
+		<%= label_tag(:topic,@displayquestion.question_text,:class=>"form-label")%>
+		</div>
+	</p>
+	<p>
+	<label>
+		<%= check_box_tag 'answer[]',"1"%>
+		<%= label_tag(:choice1,@displayquestion.choice1,:class=>"form-label")%>
+	</label>
+	</p>
+	<p>
+	<label>
+		<%= check_box_tag 'answer[]',"2"%>
+		<%= label_tag(:choice2,@displayquestion.choice2,:class=>"form-label")%>
+	</label>
+	</p>
+	<p>
+	<label>
+		<%= check_box_tag 'answer[]',"3"%>
+		<%= label_tag(:choice3,@displayquestion.choice3,:class=>"form-label")%>
+	</label>
+	</p>
+	<p>
+	<label>
+		<%= check_box_tag 'answer[]',"4"%>
+		<%= label_tag(:choice4,@displayquestion.choice4,:class=>"form-label")%>
+	</label>
+	</p>
+	<% if @question.question_idx==100 %>
+		<%= f.submit(:value=>t('finish'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
+	<% else %>
+		<%= f.submit(:value=>t('next'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
+	<% end %>
+<% end %>

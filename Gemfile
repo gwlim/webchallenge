@@ -1,5 +1,5 @@
-source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
-#source :rubygems
+#source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
+source :rubygems
 
 gem 'rails', '3.2.6'
 
@@ -7,6 +7,11 @@ gem 'rails', '3.2.6'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2'
+gem 'devise'
+gem 'activeadmin'
+gem 'recaptcha', :require => 'recaptcha/rails'
+gem 'css3-progress-bar-rails'
+gem 'slim-attributes'
 
 # Gems used only for development and not required
 # in production environment by default.

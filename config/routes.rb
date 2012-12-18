@@ -55,4 +55,30 @@ WebChallenge::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  ActiveAdmin.routes(self)
+
+  devise_for :administrators, ActiveAdmin::Devise.config
+
+  devise_for :students, :controllers => { :registrations => "registrations", :sessions => "sessions", :passwords => "passwords" , :confirmations => "confirmations" }
+
+  authenticated :student do
+    get '/student/home' => "students#home", :as => :student_root,:locale => /'en-US'|'zh-CN'|'zh-TW'/
+    resources :questions, :path => "/student/questions/" ,:only=>[:update,:index]
+    get '/student/result' => "students#result", :as => :student_result
+    delete 'sign_out' => 'sessions#destroy', :as => :destroy_user_session, :via=> :delete
+  end
+
+  as :student do
+    match '/cn' => 'sessions#new', :locale=>"zh-CN"
+    match '/tw' => 'sessions#new', :locale=>"zh-TW"
+    match '/en' => 'sessions#new', :locale=>"en-US"
+    get 'students/activate' => "registrations#activate", :as => :student_activate
+    get 'students/prizes' => "registrations#prizes", :as => :student_prizes
+    get 'sign_in' => "sessions#new", :as => :new_student_session
+    post 'sign_in' => 'sessions#create', :as => :student_session
+  end
+
+  root :to => redirect("/sign_in?locale=en-US")
+
 end

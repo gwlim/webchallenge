@@ -1,0 +1,33 @@
+<div id="container">
+	<div id="content">
+		<div class="grid_10">	
+			<h2>
+			<%= t("edit_password_header")%>
+			</h2>
+					<p><%= t("edit_password_instruct")%></p>
+
+					<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+					<%= f.hidden_field :reset_password_token %>
+					<%= devise_error_messages! %>
+						<div class="row">
+							<%= f.label(:password,"New Password <span class='mandatory'>*</span>".html_safe,:class=>"form-label")%>
+							<%= f.password_field(:password,:autocomplete => "off",:class => "wide-textbox") %>
+						</div><!-- /.row -->
+						<div class="row">
+							<%= f.label(:password_confirmation,"New Password Confirmation <span class='mandatory'>*</span>".html_safe,:class=>"form-label") %>
+							<%= f.password_field(:password_confirmation, :autocomplete => "off", :class=>"wide-textbox") %>
+						</div>
+						<div class="row">
+							<%= f.submit(:value=>t('submit'),:class =>"large blue awesome",:disable_with =>t('submitting')) %>
+						</div><!-- /.row -->
+
+						<div class="row">
+							<span class="forgot-password">
+								<%= link_to t("back_to_sign_in"), new_session_path(resource_name) %>
+							</span>
+						</div><!-- /.row -->
+						
+					<% end %>
+		</div><!-- /.grid-5 -->
+	</div><!-- /#content -->
+</div><!-- /container -->

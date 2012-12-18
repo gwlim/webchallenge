@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<style type="text/css">
+		body {
+			background-color: #f1f1f1; 
+			margin: 0px;
+			background-repeat: repeat-x;
+			padding: 20px 0;
+			width: 100% !important;
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+		}
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body style="background-color: #f1f1f1; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  ">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center" style=" width: 100% !important; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  ">
+		<tr>
+			<td valign="top">
+				<table bgcolor="#ffffff" width="600" cellspacing="0" cellpadding="0" border="0" align="center">
+					<tr>
+						<td valign="top">
+		<% case (@resource.language) %>
+		<%when "zh-CN"%>
+		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-cn.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/cn"),:target=>"_blank" %>
+		<%when "zh-TW"%>
+		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-tw.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/tw"),:target=>"_blank"%>
+		<%else%>
+		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-en.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/en/"),:target=>"_blank"%>
+		<%end%>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" style="padding: 20px;">
+							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-left: 0; margin-right: 0;  margin-bottom: 10px;">
+<%=t('hi')%> <%= @resource.first_name if @resource.respond_to?('first_name')%> <%= @resource.last_name if @resource.respond_to?('last_name') %>
+</div>
+							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-left: 0; margin-right: 0;  margin-bottom: 10px;"><%=t('confirmthanks',:locale=>@resource.language)%> <%= Time.now.year %>!</div>
+							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  margin-bottom: 0;"><b><%= link_to t("confirmclick",:locale=>@resource.language), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></b></div>
+							<img src="https://redhatchallenge-rhc.rhcloud.com/assets/divider.jpg" width="560" height="41" />
+							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  margin-bottom: 0;"><%=t('confirminfo').html_safe%></div>
+						</td>
+					</tr>
+				</table>
+				<table width="655" cellspacing="0" cellpadding="0" border="0" align="center">
+					<tr>
+						<td valign="middle">
+							<div style="font-family: arial, verdana; font-size: 12px; color: #939393; line-height: 18px; padding: 15px; margin: 0; text-align: center;"><%=t('noreply')%></div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

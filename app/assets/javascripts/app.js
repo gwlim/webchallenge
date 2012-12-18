@@ -1,0 +1,1 @@
+setTimeout(function(){$(".error-message").fadeOut("slow")},1E4);$(window).unload(function(){$.rails.enableFormElements($($.rails.formSubmitSelector))});

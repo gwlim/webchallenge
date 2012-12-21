@@ -1,5 +1,5 @@
-ActiveAdmin.register Rhconfig, :as => "Application Configuration" do
-menu :parent => "Application",:priority => 1
+ActiveAdmin.register Rhconfig, :as => "Challenge Configuration" do
+menu :parent => "Application",:priority => 2
 if Rhconfig.table_exists?
   config.sort_order = "id_asc"
 #	config.clear_action_items!
@@ -20,19 +20,10 @@ if Rhconfig.table_exists?
 		column :add_easy_qn
 		end
 		column :time_limit
-		column :registration_start
-		column :registration_end
-		column ("Manual Registration") {|ro| status_tag (ro.registration_override ? "ENABLED" : "DISABLED"), (ro.registration_override ? 'ok' :'error')unless ro.registration_override.blank?}
-		column ("Registration Control") {|rc| status_tag (rc.registration_override ? "ON" : "OFF"), (rc.registration_override ? 'ok'  :'error')unless rc.registration_override.blank?}
 		column :challenge_start
 		column :challenge_end
-		column ("Manual Challenge") {|co| status_tag (co.registration_override ? "ENABLED" : "DISABLED"), (co.registration_override ? 'ok' : 'error')unless co.registration_override.blank?}
-		column ("Challenge Control") {|cc| status_tag (cc.registration_override ? "ON" : "OFF"), (cc.registration_override ? 'ok' : 'error')unless cc.registration_override.blank?}
-		if !(Rhconfig.first.extend_time.nil?)
-		column :extend_time
-		end
-		column ("Disable Recaptcha") {|r| status_tag (r.disable_recaptcha ? "ENABLED" : "DISABLED"), (r.disable_recaptcha ?  'warning':'ok' )unless r.disable_recaptcha.nil?}
-		column :default_credential
+		column ("Manual Challenge") {|co| status_tag (co.challenge_override ? "ENABLED" : "DISABLED"), (co.challenge_override ? 'ok' : 'error')unless co.challenge_override.blank?}
+		column ("Challenge Control") {|cc| status_tag (cc.challenge_override ? "ON" : "OFF"), (cc.challenge_override ? 'ok' : 'error')unless cc.challenge_override.blank?}
 		default_actions
 	  	end
   end

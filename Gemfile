@@ -15,6 +15,7 @@ gem 'slim-attributes'
 
 # Gems used only for development and not required
 # in production environment by default.
+#The entire section can be commented out safely to reduce the Gems required
 #group :development do
 #  gem 'sqlite3'
   # This needs to be installed so we can run Rails console on OpenShift directly

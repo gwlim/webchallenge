@@ -11,8 +11,8 @@ if Appconfig.table_exists?
 		column :default_password
 		column :registration_start
 		column :registration_end
-		column ("Manual Registration") {|ro| status_tag (ro.registration_override ? "ENABLED" : "DISABLED"), (ro.registration_override ? 'ok' :'error')unless ro.registration_override.blank?}
-		column ("Registration Control") {|rc| status_tag (rc.registration_override ? "ON" : "OFF"), (rc.registration_override ? 'ok'  :'error')unless rc.registration_override.blank?}
+		column ("Manual Registration") {|ro| status_tag (ro.registration_override ? "ENABLED" : "DISABLED"), (ro.registration_override ? 'ok' :'error')unless ro.registration_override.nil?}
+		column ("Registration Control") {|rc| status_tag (rc.registration_override ? "OFF" : "ON"), (rc.registration_override ? 'error'  :'ok')unless rc.registration_override.nil?}
 		default_actions
 	  	end
   end

@@ -9,14 +9,10 @@ ActiveAdmin.register_page "Dashboard" do
   #
   menu :parent => "Application",:priority => 2
   content :title => proc{ I18n.t("active_admin.dashboard") } do
-    citytz=['America/New_York', 'Etc/UTC', 'Asia/Bangkok', 'Asia/Hong_Kong', 'Asia/Singapore', 'Asia/Kuala_Lumpur','Asia/Taipei','Asia/Manila']
-    cityctz=['Asia/Shanghai']
+    citytz=['America/New_York', 'Etc/UTC', 'Asia/Shanghai', 'Asia/Hong_Kong', 'Asia/Singapore', 'Asia/Kuala_Lumpur','Asia/Taipei',]
+    countrylist=["China","Hong Kong","Singapore","Malaysia","Taiwan"]
     rs=Appconfig.find_by_id(1).registration_start
     re=Appconfig.find_by_id(1).registration_end
-    cs=Rhconfig.find_by_id(1).challenge_start
-    ce=Rhconfig.find_by_id(1).challenge_end
-    ccs=Rhconfig.find_by_id(2).challenge_start
-    cce=Rhconfig.find_by_id(2).challenge_end
     columns do
 	column do
 	      panel "Challenge Status" do
@@ -27,11 +23,20 @@ ActiveAdmin.register_page "Dashboard" do
 				  td "Automatic Registration"
 				  td {status_tag (Appconfig.find_by_id(1).registration_override ? "OFF" : "ON"),(Appconfig.find_by_id(1).registration_override ? :error : :ok)}
 				  tr
-				  td "Automatic Challenge For Other Countries"
-				  td {status_tag (Rhconfig.find_by_id(1).challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_id(1).challenge_override ? :error : :ok)}
-				  tr
 				  td "Automatic Challenge For China"
-				  td {status_tag (Rhconfig.find_by_id(2).challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_id(2).challenge_override ? :error : :ok)}
+				  td {status_tag (Rhconfig.find_by_country("China").challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_country("China").challenge_override ? :error : :ok)}
+				  tr
+				  td "Automatic Challenge For Hong Kong"
+				  td {status_tag (Rhconfig.find_by_country("Hong Kong").challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_country("Hong Kong").challenge_override ? :error : :ok)}
+				  tr
+				  td "Automatic Challenge For Malaysia"
+				  td {status_tag (Rhconfig.find_by_country("Malaysia").challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_country("Malaysia").challenge_override ? :error : :ok)}
+				  tr
+				  td "Automatic Challenge For Singapore"
+				  td {status_tag (Rhconfig.find_by_country("Singapore").challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_country("Singapore").challenge_override ? :error : :ok)}
+				  tr
+				  td "Automatic Challenge For Taiwan"
+				  td {status_tag (Rhconfig.find_by_country("Taiwan").challenge_override ? "OFF" : "ON"),(Rhconfig.find_by_country("Taiwan").challenge_override ? :error : :ok)}
 
 			end
 	      end
@@ -44,11 +49,7 @@ ActiveAdmin.register_page "Dashboard" do
 				  td "#{@ct.to_s}"
 				  td "#{DateTime.now.in_time_zone(@ct.to_s).to_s}"
 			end
-				  for @cct in cityctz do
-				  tr
-				  td "#{@cct.to_s}"
-				  td "#{DateTime.now.in_time_zone(@cct.to_s).to_s}"
-				  end
+
 		    end
 	      end
 	end
@@ -65,31 +66,14 @@ ActiveAdmin.register_page "Dashboard" do
 		      td "Registration Close"
 		      td "#{re.to_s}"
 		      tr
-		      td "Challenge Start"
-		      td "#{cs.in_time_zone(ct).to_s}"
-		      tr
-		      td "Challenge Close"
-		      td "#{ce.in_time_zone(ct).to_s}"
-		    end
-		end
-	    end
-	    for cct in cityctz do
-		panel "#{cct}" do
-		    table do
-		      th "Information"
-		      th "Date Time"
-		      tr
-		      td "Registration Start"
-		      td "#{rs.to_s}"
-		      tr
-		      td "Registration Close"
-		      td "#{re.to_s}"
-		      tr
-		      td "Challenge Start"
-		      td "#{ccs.in_time_zone(ct).to_s}"
-		      tr
-		      td "Challenge Close"
-		      td "#{cce.in_time_zone(ct).to_s}"
+			for @cl in countrylist do
+			td "#{@cl} Challenge Start"
+			td "#{Rhconfig.find_by_country(@cl).challenge_start.in_time_zone(ct.to_s).to_s}"
+			tr
+			td "#{@cl} Challenge Close"
+			td "#{Rhconfig.find_by_country(@cl).challenge_end.in_time_zone(ct.to_s).to_s}"
+			tr
+			end
 		    end
 		end
 	    end

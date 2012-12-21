@@ -1,5 +1,5 @@
-#source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
-source :rubygems
+source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
+#source :rubygems
 
 gem 'rails', '3.2.6'
 
@@ -15,12 +15,12 @@ gem 'slim-attributes'
 
 # Gems used only for development and not required
 # in production environment by default.
-group :development do
-  gem 'sqlite3'
+#group :development do
+#  gem 'sqlite3'
   # This needs to be installed so we can run Rails console on OpenShift directly
-  gem 'minitest'
-  gem 'therubyracer', :platforms => :ruby
-end
+#  gem 'minitest'
+#  gem 'therubyracer', :platforms => :ruby
+#end
 
 # Gems used only for assets and not required
 # in production environments by default.

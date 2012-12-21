@@ -3,7 +3,7 @@ if Student.table_exists?
   config.per_page = 100
   config.sort_order = "id_asc"
   menu :parent => "Student Information",:priority => 1
-  
+
 	scope :activated
 	scope :inactivated
 	scope :joined, :default => true do |fields|
@@ -25,7 +25,7 @@ if Student.table_exists?
 	filter :challenge_completed, :as => :select
 	filter :challenge_total_score, :as => :numeric
 	filter :challenge_time_limit
-	
+
 	batch_action :reset_password_of, :confirm => "Are you sure you want to reset password of selected students?" do |selection|
 	    @list=String.new
 		Student.find(selection).each do |student|
@@ -34,7 +34,7 @@ if Student.table_exists?
 	    end
 	    redirect_to rhchallenge_administration_students_path, :notice => "#{@list.to_s} passwords have been resetted to #{Rhconfig.first.default_credential}"
 	end
-			
+
 	batch_action :reset_challenge_of, :confirm => "Are you sure you want to reset the challenge of selected students?" do |selection|
 	    @list=String.new
 		Student.find(selection).each do |student|
@@ -49,7 +49,7 @@ if Student.table_exists?
 	    redirect_to rhchallenge_administration_students_path, :notice => "#{@list} challenge resetted!"
 	    end
 	end
-	
+
 	batch_action :generate_challenge_of, :confirm => "Are you sure you want to generate the challenge of selected students?" do |selection|
 	    Student.find(selection).each do |student|
 	      student.gen_questions
@@ -57,7 +57,7 @@ if Student.table_exists?
 	    end
 	    redirect_to rhchallenge_administration_students_path, :notice => "#{@list} challenge generated!"
 	end
-	
+
 	batch_action :clear_remember_created_at_of, :confirm => "Are you sure you want to clear remember status?" do |selection|
 	    Student.find(selection).each do |student|
 	      student.remember_created_at=nil
@@ -65,7 +65,7 @@ if Student.table_exists?
 	    end
 	    redirect_to rhchallenge_administration_students_path, :notice => "Remember status removed!"
 	end
-	
+
 	batch_action :delete_challenge_of, :confirm => "Are you sure you want to delete challenge of selected students?" do |selection|
 	    @completedlist=String.new
 	    @notcompletedlist=String.new
@@ -73,7 +73,7 @@ if Student.table_exists?
 		if (!student.challenge.blank? && !student.questions.blank?)
 		  student.cleanup
 		  @completedlist << "[#{student.email}]"
-		else 
+		else
 		  @notcompletedlist << "[#{student.email}]"
 		end
 	    end
@@ -96,15 +96,15 @@ if Student.table_exists?
 	    end
 	    redirect_to rhchallenge_administration_students_path, :notice => "#{@list.to_s} activated successfully!"
 	end
-	
-	member_action :toggle_lock, :method => :put do
+
+	member_action :toggle_trial, :method => :put do
 		@student=Student.find(params[:id])
-		@student.toggle_lock
-		redirect_to rhchallenge_administration_student_path, :notice=> "Lock Has Been Set To #{@student.lock.to_s}"
+		@student.toggle_trial
+		redirect_to rhchallenge_administration_student_path, :notice=> "Trial Has Been Set To #{@student.trial.to_s}"
 	end
 
 	action_item :only => [:show,:edit] do
-		link_to 'Toggle Lock', toggle_lock_rhchallenge_administration_student_path(student), :method => :put, :confirm => "Are you sure you want toggle the lock?" 
+		link_to 'Toggle Trial Status', toggle_trial_rhchallenge_administration_student_path(student), :method => :put, :confirm => "Are you sure you want toggle the trial status?"
 	end
 
 		index do
@@ -112,18 +112,18 @@ if Student.table_exists?
 		column :id
 		column :first_name
 		column :last_name
-		column :email 
+		column :email
 		column :contact_number
 		column :school
 		column :country, :as=>:country_select
 		column :language
 		column :lecturer_name
 		column :lecturer_email
-		column ('Testing Mode'){|student| status_tag (student.lock ? "ENABLED" : "DISABLED"), (student.lock ? :ok : :error)unless student.lock.blank?} 
+		column ('Testing Mode'){|student| status_tag (student.trial ? "ENABLED" : "DISABLED"), (student.trial ? :ok : :error)unless student.trial.blank?}
 	#	column :last_sign_in_ip Doesn't show anything useful since it is scaled
 		column :challenge do |student|
 			link_to "Challenge", :controller => "challenges", :action => "index", 'q[student_id_eq]' => "#{student.id}".html_safe
-			end   
+			end
 		column :questions do |student|
 	  		link_to "Questions", :controller => "questions", :action => "index", 'q[student_id_eq]' => "#{student.id}".html_safe
 			end
@@ -133,7 +133,7 @@ if Student.table_exists?
 		column 'Completed', :sortable => 'challenges.completed' do |student|
 			status_tag (student.challenge.completed ? "COMPLETED" : "INCOMPLETE"), (student.challenge.completed ? :ok : :warning) if !student.challenge.nil?
 			end
-		column 'Timelimit', :sortable => 'challenges.time_limit' do |student| 
+		column 'Timelimit', :sortable => 'challenges.time_limit' do |student|
 			 student.challenge.time_limit.in_time_zone('Asia/Singapore').to_s unless student.challenge.nil? || student.challenge.time_limit.blank?
 			end
 		column :confirmation_token do |student|
@@ -145,7 +145,7 @@ if Student.table_exists?
 		column :remember_created_at
 		default_actions
 		end
-		
+
 		form do |f|
 		f.inputs "Student Details" do
 		f.input :email

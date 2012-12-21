@@ -42,7 +42,7 @@ class Student < ActiveRecord::Base
 	end
 
 	def challenge_start
-		if (self.lock==true)
+		if (self.trial==true)
 			return true
 		elsif (Rhconfig.find_by_country(self.country).challenge_override==true) && (Rhconfig.find_by_country(self.country).challenge_on==true)
 			return true

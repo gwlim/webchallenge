@@ -142,7 +142,6 @@ if Student.table_exists?
 		column :reset_password_token do |student|
 			link_to "Set Password", edit_password_path(student, :reset_password_token => student.reset_password_token),:data => {:confirm=>"Are you sure you want to edit password of #{student.email.to_s} ?"} if(!student.reset_password_token.blank?)
 		end
-		column :remember_created_at
 		default_actions
 		end
 
@@ -157,7 +156,6 @@ if Student.table_exists?
 		f.input :lecturer_name
 		f.input :lecturer_email
 		f.input :school
-		f.input :remember_created_at
 		end
 		f.buttons
 		end

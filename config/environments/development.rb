@@ -21,6 +21,8 @@ WebChallenge::Application.configure do
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
+  config.assets.precompile += %w[ active_admin.css active_admin.js active_admin/print.css application.css application.js challenge-cn.js challenge-en.js challenge-tw.js *.png *.jpg *.jpeg *.gif *.svg *.eot *.woff *.ttf ]
+
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 

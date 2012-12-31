@@ -1,0 +1,25 @@
+<div id="container">
+	<div id="content">
+		<div class="grid_10 left">
+			<h2>
+			<%= t("registration_header") %>
+			</h2>
+			<div class="registration-message">
+			<p><%=t('activate_thank')%></p> 
+			<p><%=t('activate_instruction')%></p>
+			<p><%=t('activate_nomail',:href=>link_to(t("activate_here"),new_confirmation_path(resource_name))).html_safe%></p>
+			<p><%=t('white_list')%></p>
+			<p>
+			<% if params[:locale]=="zh-CN" %>
+			<%= t('visit_blog',:href=>link_to(t("blog_cn"),"http://apac.redhat.com/redhatchallenge2012/blog/cn/")).html_safe  %>
+			<% elsif params[:locale]=="zh-TW" %>
+			<%= t('visit_blog',:href=>link_to(t("blog_tw"),"http://apac.redhat.com/redhatchallenge2012/blog/tw/")).html_safe  %>
+			<% else %>
+			<%= t('visit_blog',:href=>link_to(t("blog_en"),"http://apac.redhat.com/redhatchallenge2012/blog/en/")).html_safe  %>
+			<% end %>
+			</p>
+			</div>
+			<p style="text-align: center;"><%= link_to t("back_to_sign_in"), new_session_path(resource_name) %></p>
+		</div><!-- /.grid-5 -->
+	</div><!-- /#content -->
+</div><!-- /container -->

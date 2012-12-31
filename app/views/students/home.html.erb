@@ -1,0 +1,37 @@
+<div id="container">
+	<div id="content">
+		<div class="grid_7 left">
+			<div class="panel01">
+					<h1>
+						<%=t('student_home')%>
+					</h1>
+						<p style="font-size: 18px; color: #333333;"><%=t('hi')%> <%= current_student.first_name %> <%= current_student.last_name %>,</p>
+						<%= render :partial=> "layouts/notice" %>
+						<p><%= t('welcome_home')%> <%= Time.now.year %>! <%=t('prompt_start') if (current_student.challenge_start==true && current_student.challenge.completed==false) %></p>
+
+					<div class="row" style="text-align: center;">
+						<% if current_student.challenge.completed %>
+						<%= link_to t('see_result'),student_result_path(:locale=>current_student.language),:class=>"large blue awesome",:disable_with =>t('loading')%>
+						<% elsif current_student.challenge_start==true %>
+						<%= link_to t('start_quiz').html_safe, questions_path(:locale=>current_student.language),:class=>"large blue awesome",:disable_with =>t('loading'),:data => { :confirm => t('ready') } %>
+						<% else %>
+						<% end %>
+					</div><!-- /.row -->
+			</div><!-- /.panel02 -->
+		</div><!-- /.grid-5 -->
+		<div class="grid_3 right">
+				<div class="panel02">
+					<div class="edit-profile">
+						<%= image_tag("edit-profile-thumb.jpg",:alt =>"profile",:class=>"right") %>
+						<h2>
+							<%=t('settings')%>
+						</h2>
+						<ul class="list">
+						<li><%= link_to t('edit_profile_header'), edit_student_registration_path %></li>
+						<li><%= link_to t('sign_out'), destroy_student_session_path, :method => :delete %></li>
+					</ul>
+					</div><!-- /.edit-profile -->
+				</div><!-- /.panel02 -->
+			</div><!-- /.grid-5 -->
+	</div><!-- /#content -->		
+</div><!-- /container -->

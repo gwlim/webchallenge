@@ -1,0 +1,26 @@
+<%= content_tag :div, :id=> "timeleft", :data=> {:timeleft=> @timeleft} do -%><% end %>
+<fieldset><legend><b><%=t("Question")%>: <%= @question.question_idx %></b></legend>
+	<div id="content">
+	<%= progress_bar((@question.question_idx*100)/100, :color => 'blue') %>
+		<div class="grid_5 left">
+			<div class="panel01">	
+			<% if (@displayquestion.answer.include?(",")) %>
+			<%= render 'multiresponse' %>
+			<% elsif (@displayquestion.choice3.blank? && @displayquestion.choice3.blank?) %>
+			<%= render 'truefalse' %>
+			<% else %>
+			<%= render 'singleresponse' %>
+			<% end %>
+		</div>
+	</div>
+		<div class="grid_5 right">
+			<p></p>
+			<div class="panel02">
+				<span class="clock right">
+				<span class="timer"><%=t("timer")%></span>
+				<span id="clock">&nbsp;</span>
+				</span>
+			</div>
+		</div></div>
+	</div></fieldset>
+</div>

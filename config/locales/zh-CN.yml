@@ -1,0 +1,423 @@
+zh-CN:
+  hi: 你好
+  webchallenge: "红帽2012挑战赛"
+  passwordclick: '如果你已要求重置密码，点击这里重设密码。'
+  passwordignore: '如果你没有这个要求，请忽略这封邮件。'
+  passwordinfo: '您的密码将不会改变，直到你访问上面的链接，并创建一个新的。'
+  confirmthanks: '谢谢您参加红帽挑战赛'
+  confirmclick: '请点击此处确认并登录到您的帐户。'
+  confirminfo: '想知道更多关于奖品及挑战详情，请登陆：<a href="http://apac.redhat.com/redhatchallenge2012" target="_blank">http://apac.redhat.com/redhatchallenge2012</a>'
+  noreply: '这是一个自动生成的电子邮件，请不要回复。'
+
+  prize_intro: "<h2>优胜者会获得奖品和荣誉。</h2><p><b>冠军的奖品为：</b></p><ul><li>三星SIII手机</li><li>从RH300和RH318培训课中任选一门，或者到红帽北京公司或新加坡公司进行为期一个月的实习** </li><li>一部Raspberry Pi和一个带有红帽品牌的键盘</li><li>冠军奖杯和证书</li></ul><p><b>入围决赛的选手每人将获得：</b></p><ul><li> 一部Raspberry Pi和一个带有红帽品牌的键盘</li><li>参加者奖杯和证书</li></ul>"
+
+  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** 实习不包括差旅和食宿的费用。</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">红帽拥 有所有奖品的解释权，无可异议。所有奖品 不得退换现金或被交易。</p>'
+
+  text_intro: '<h1>参加红帽挑战赛，赢在当下!</h1><p>想知道你是IT领域中的佼佼者，想证明你是这个领域最优秀的人才并和其它志趣相同的同僚一比高下吗？</p><p>现在就给你一个施展才华的机会！</p><p>红帽2012挑战赛第一轮将以多选题的方式相互对决，然后参加第二轮的视频面试，获胜者将在北京参加最后一轮的终极挑战。</p><p>脱颖而出的%{href}将荣膺红帽王！</p><ul><li>第一轮-11月2日</li><li>第二轮-11月12日周内</li><li>第三轮-12月15日</li></ul><h3>报名资格：</h3><p>如果你是就读于中国大陆、香港、马来西亚、新加坡和台湾的大学，工学院或私立学 校的本科/全日制学生，就有资格参加本次挑战。</p><h3>准备工作：</h3><p>每名参赛选手将测试Red Hat Linux System Administration, Network Administration, Security Administration和Virtualization任务。</p><p>阅读完以上内容，请登录红帽官方网站<a href="http://cn.redhat.com/" target="_blank">cn.redhat.com</a>,或者关注我们的<a href="http://www.weibo.com/redhatchina" target="_blank">新浪微博</a>，来学习更多想要赢得挑战赛的内容。</p>'
+
+  registernow_href: 立即报名
+  prizes_href: 优胜者
+  sign_in_header: 登录 <span>( %{href} )</span>
+  sign_up_href: 没有帐户?现在注册!
+  forgot_password_href: 忘记密码？
+  confirmation_email_href: 没有收到确认电子邮件？
+
+  support_mail: 如果你对于网站或者挑战赛有任何问题，请发邮件至：<b>redhatchallenge@redhat.com</b>。
+
+  registration_header: 注册
+  login_legend: 登录资料
+  personal_info_legend: 个人资料
+  back_to_sign_in: ← 回到登录页
+
+  activate_thank: 感谢您的注册！
+  activate_instruction: 请点击您收到的确认邮件中的链接激活你的账户。
+  activate_nomail: 如果你没有收到任何邮件，请点击%{href}
+  activate_here: 这里
+
+  edit_profile_header: 修改个人简介
+  edit_profile_back: ← 返回学生主页
+
+  visit_blog: 更多关于红帽挑战赛2012的信息，请访问我们的博客：%{href}
+  blog_en: "http://apac.redhat.com/redhatchallenge2012/blog/en/"
+  blog_cn: "http://apac.redhat.com/redhatchallenge2012/blog/cn/"
+  blog_tw: "http://apac.redhat.com/redhatchallenge2012/blog/tw/"
+
+  hi: 你好
+
+  forgot_header: 忘记密码？ <span>( %{href} )</span>
+  forgot_instruct: 请输入您的电子邮件地址。我们会重新给你一个链接重置密码。
+
+  edit_password_header: 更改密码
+  edit_password_instruct: 请输入您的新密码。
+
+  confirm_header: 重发确认电邮 <span>( %{href} )</span>
+  confirm_instruct: 请在以下输入您的电子邮件地址。我们会重新给你一个链接以验证你的帐户。
+
+  white_list: 为确保您能够正常收到确认邮件，请将<b>registration@redhatchallenge-rhc.rhcloud.com</b>添加在您的联系人列表或白名单中。
+
+  helpers:
+      label:
+       session:
+           email: 电邮地址
+           password: 密码
+
+  remember_me: 记住
+
+  change_password: 更改密码
+
+  activerecord:
+     models:
+       student: 学生
+       challenge: 挑战
+       question: 问题
+     attributes:
+        student:
+           email: 电邮地址
+           password: 密码
+           password_confirmation: 确认密码
+           current_password: 当前密码
+           first_name: 姓
+           last_name: 名
+           contact_number: 联络号码
+           school: 学院
+           country: 国家
+           language: 语言
+           lecturer_name: 导师
+           lecturer_email: 讲师电邮地址
+           terms: 服务条款
+  tos: 我接受本次比赛的使用条款
+
+  student_home: 仪表板
+
+  settings: 设置
+
+  prompt_start: 要启动您的测验，请点击下面的“开始测验”按钮。
+
+  ready: '你准备好开始了吗？'
+
+  welcome_home: 欢迎红帽挑战
+
+  Question: 问题
+
+  timer: 计时器
+  sign_in: 登录
+
+  sign_out: 退出登录
+
+  signing_in: 登入中...
+
+  submit: 提交
+
+  submitting: 提交中...
+
+  update: 更新
+
+  updating: 更新中...
+
+  next: 提交和下一个问题
+
+  loading: 载入中...
+
+  start_quiz: 开始测验 &raquo;
+
+  starting: 开始测验中...
+
+  finish: 完成并提交
+
+  see_result: 显示成绩
+
+  student_result: 学生成绩
+
+  Dear: 亲爱的
+
+  thank_participation: 感谢您参加红帽挑战赛
+
+  notify:  如果您顺利进入第二轮比赛，我们会通过电子邮件通知您。
+
+  recaptcha:
+    errors:
+      verification_failed: '验证码下面的代码是一个错误。请重新输入代码并点击提交。'
+      recaptcha_unavailable: '验证码是目前无法使用'
+      incorrect-captcha-sol: '错误：'
+  China: 中国
+  Hongkong: 香港
+  Malaysia: 马来西亚
+  Philippines: 菲律宾
+  Singapore: 新加坡
+  Taiwan: 台湾
+  Thailand: 泰国
+
+  English: 英语
+  Simplified_Chinese: 中文(简体)
+  Traditional_Chinese: 中文(繁体)
+  active_admin:
+    dashboard: Dashboard
+    dashboard_welcome:
+      welcome: "Welcome to Active Admin. This is the default dashboard page."
+      call_to_action: "To add dashboard sections, checkout 'app/admin/dashboards.rb'"
+    view: "View"
+    edit: "Edit"
+    delete: "Delete"
+    delete_confirmation: "Are you sure you want to delete this?"
+    new_model: "New %{model}"
+    create_model: "New %{model}"
+    edit_model: "Edit %{model}"
+    update_model: "Edit %{model}"
+    delete_model: "Delete %{model}"
+    details: "%{model} Details"
+    cancel: "Cancel"
+    empty: "Empty"
+    previous: "Previous"
+    next: "Next"
+    download: "Download:"
+    has_many_new: "Add New %{model}"
+    has_many_delete: "Delete"
+    filter: "Filter"
+    clear_filters: "Clear Filters"
+    search_field: "Search %{field}"
+    equal_to: "Equal To"
+    greater_than: "Greater Than"
+    less_than: "Less Than"
+    main_content: "Please implement %{model}#main_content to display content."
+    logout: "Logout"
+    sidebars:
+      filters: "Filters"
+    pagination:
+      empty: "No %{model} found"
+      one: "Displaying <b>1</b> %{model}"
+      one_page: "Displaying <b>all %{n}</b> %{model}"
+      multiple: "Displaying %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> of <b>%{total}</b> in total"
+      entry:
+        one: "entry"
+        other: "entries"
+    any: "Any"
+    blank_slate:
+      content: "There are no %{resource_name} yet."
+      link: "Create one"
+    batch_actions:
+      button_label: "Batch Actions"
+      delete_confirmation: "Are you sure you want to delete these %{plural_model}? You won't be able to undo this."
+      succesfully_destroyed:
+        one: "Successfully destroyed 1 %{model}"
+        other: "Successfully destroyed %{count} %{plural_model}"
+      selection_toggle_explanation: "(Toggle Selection)"
+      link: "Create one"
+      action_label: "%{title} Selected"
+      labels:
+        destroy: "Delete"
+    comments:
+      body: "Body"
+      author: "Author"
+      title: "Comment"
+      add: "Add Comment"
+      resource: "Resource"
+      no_comments_yet: "No comments yet."
+      title_content: "Comments (%{count})"
+      errors:
+        empty_text: "Comment wasn't saved, text was empty."
+    devise:
+      login:
+        title: "Login"
+        remember_me: "Remember me"
+        submit: "Login"
+      reset_password:
+        title: "Forgot your password?"
+        submit: "Reset My Password"
+      change_password:
+        title: "Change your password"
+        submit: "Change my password"
+      links:
+        sign_in: "Sign in"
+        forgot_your_password: "Forgot your password?"
+  date:
+    abbr_day_names:
+    - 日
+    - 一
+    - 二
+    - 三
+    - 四
+    - 五
+    - 六
+    abbr_month_names:
+    -
+    - 1月
+    - 2月
+    - 3月
+    - 4月
+    - 5月
+    - 6月
+    - 7月
+    - 8月
+    - 9月
+    - 10月
+    - 11月
+    - 12月
+    day_names:
+    - 星期日
+    - 星期一
+    - 星期二
+    - 星期三
+    - 星期四
+    - 星期五
+    - 星期六
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%Y年%b%d日'
+      short: ! '%b%d日'
+    month_names:
+    -
+    - 一月
+    - 二月
+    - 三月
+    - 四月
+    - 五月
+    - 六月
+    - 七月
+    - 八月
+    - 九月
+    - 十月
+    - 十一月
+    - 十二月
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: 大约一小时
+        other: 大约 %{count} 小时
+      about_x_months:
+        one: 大约一个月
+        other: 大约 %{count} 个月
+      about_x_years:
+        one: 大约一年
+        other: 大约 %{count} 年
+      almost_x_years:
+        one: 接近一年
+        other: 接近 %{count} 年
+      half_a_minute: 半分钟
+      less_than_x_minutes:
+        one: 不到一分钟
+        other: 不到 %{count} 分钟
+      less_than_x_seconds:
+        one: 不到一秒
+        other: 不到 %{count} 秒
+      over_x_years:
+        one: 一年多
+        other: ! '%{count} 年多'
+      x_days:
+        one: 一天
+        other: ! '%{count} 天'
+      x_minutes:
+        one: 一分钟
+        other: ! '%{count} 分钟'
+      x_months:
+        one: 一个月
+        other: ! '%{count} 个月'
+      x_seconds:
+        one: 一秒
+        other: ! '%{count} 秒'
+    prompts:
+      day: 日
+      hour: 时
+      minute: 分
+      month: 月
+      second: 秒
+      year: 年
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: 必须是可被接受的
+      blank: 不能为空字符
+      confirmation: 与确认值不匹配
+      empty: 不能留空
+      equal_to: 必须等于 %{count}
+      even: 必须为双数
+      exclusion: 是保留关键字
+      greater_than: 必须大于 %{count}
+      greater_than_or_equal_to: 必须大于或等于 %{count}
+      inclusion: 不包含于列表中
+      invalid: 是无效的
+      less_than: 必须小于 %{count}
+      less_than_or_equal_to: 必须小于或等于 %{count}
+      not_a_number: 不是数字
+      not_an_integer: 必须是整数
+      odd: 必须为单数
+      record_invalid: ! '验证失败: %{errors}'
+      taken: 已经被注册
+      too_long: 过长（最长为 %{count} 个字符）
+      too_short: 过短（最短为 %{count} 个字符）
+      wrong_length: 长度非法（必须为 %{count} 个字符）
+    template:
+      body: 如下字段出现错误：
+      header:
+        one: 有 1 个错误发生导致「%{model}」无法被保存。
+        other: 有 %{count} 个错误发生导致「%{model}」无法被保存。
+  helpers:
+    select:
+      prompt: 请选择
+    submit:
+      create: 新增%{model}
+      submit: 储存%{model}
+      update: 更新%{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u %n'
+        precision: 2
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: CN¥
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: 十亿
+          million: 百万
+          quadrillion: 千兆
+          thousand: 千
+          trillion: 兆
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', 和 '
+      two_words_connector: ! ' 和 '
+      words_connector: ! ', '
+  time:
+    am: 上午
+    formats:
+      default: ! '%Y年%b%d日 %A %H:%M:%S %Z'
+      long: ! '%Y年%b%d日 %H:%M'
+      short: ! '%b%d日 %H:%M'
+    pm: 下午
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails

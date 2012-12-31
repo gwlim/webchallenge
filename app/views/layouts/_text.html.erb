@@ -1,0 +1,7 @@
+<div class="grid_5 left">			
+	<div class="panel01 divider-right"><%= t('text_intro',:href=>link_to(t("prizes_href"),student_prizes_path)).html_safe  %>
+	<% if !student_signed_in? %>
+	<b><%= link_to(t("registernow_href"), new_student_registration_path).html_safe %></b>
+	<% end %>				
+	</div><!-- /.panel01 -->		
+</div><!-- /.grid-5 -->

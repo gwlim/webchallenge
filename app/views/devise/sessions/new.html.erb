@@ -1,0 +1,11 @@
+<div id="container">
+	<div id="content">
+	<%= render :partial=> "layouts/text" %>
+		<div class="grid_5 right">
+			<div class="panel02"><h2><%= t("sign_in_header",:href=>link_to(t("sign_up_href"),new_student_registration_path)).html_safe %></h2>
+			<%= render :partial=> "layouts/notice" %>
+	<%= render :partial=> "signinform" %>
+			</div><!-- /.panel02 -->
+		</div><!-- /.grid-5 -->
+	</div><!-- /#content -->		
+</div><!-- /container -->

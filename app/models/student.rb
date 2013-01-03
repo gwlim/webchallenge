@@ -162,7 +162,7 @@ class Student < ActiveRecord::Base
 	def reset_challenge
 		if !self.challenge.time_limit.blank?
 		    transaction do
-		  self.challenge.update_attributes(:last_attempted_question=>1,:completed=>false,:total_score=>0,:time_limit=>nil)
+		  self.challenge.update_attributes(:last_attempted_question=>90,:completed=>false,:total_score=>0,:time_limit=>nil)
 		  self.questions.update_all(:score=>0,:answer=>"")
 		  end
 		end

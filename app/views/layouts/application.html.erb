@@ -27,13 +27,13 @@
   <% end %>
 <%= yield %>
   <%= footer %>
-  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", :defer => "defer" %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"%>
   <script type="text/javascript">
   //<![CDATA[
   window.jQuery || document.write(unescape('%3Cscript src="/assets/jquery.min.js" type="text/javascript">%3C/script>'))
   //]]>
   </script>
-  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js", :defer => "defer" %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"%>
     <script type="text/javascript">
   //<![CDATA[
   window.jQuery.ui || document.write(unescape('%3Cscript src="/assets/jquery-ui.min.js" type="text/javascript">%3C/script>'))

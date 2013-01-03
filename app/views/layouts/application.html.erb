@@ -17,19 +17,19 @@
   <%= favicon_link_tag 'mb-icon.png', :rel => 'apple-touch-icon', :type => 'image/png'%>
   <meta charset="utf-8">
   <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", :defer => "defer" %>
   <script type="text/javascript">
   //<![CDATA[
   window.jQuery || document.write(unescape('%3Cscript src="/assets/jquery.min.js" type="text/javascript">%3C/script>'))
   //]]>
   </script>
-  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js" %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js", :defer => "defer" %>
     <script type="text/javascript">
   //<![CDATA[
   window.jQuery.ui || document.write(unescape('%3Cscript src="/assets/jquery-ui.min.js" type="text/javascript">%3C/script>'))
   //]]>
   </script>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "application", :defer => "defer" %>
   <%= csrf_meta_tags %>
 </head>
 <body>

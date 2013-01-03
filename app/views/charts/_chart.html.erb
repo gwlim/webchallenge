@@ -1,0 +1,100 @@
+<%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" %>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]-->
+<%= javascript_include_tag "highcharts" %>
+<% @xaxis= ['0', '10', '20','30','40','50','60','70','80','90','100'] %>
+<% countrylist=["China","Hong Kong","Singapore","Malaysia","Taiwan"] %>
+<% @cl = Array.new %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>0..10},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>10..20},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>20..30},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"China"}).count %>
+<% @cl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"China"}).count %>
+
+<% @hkl = Array.new %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>0..10},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>10..20},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>20..30},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"Hong Kong"}).count %>
+<% @hkl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"Hong Kong"}).count %>
+
+<% @sl = Array.new %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>0..10},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>10..20},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>20..30},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"Singapore"}).count %>
+
+<% @ml = Array.new %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>0..10},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>10..20},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>20..30},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"Malaysia"}).count %>
+<% @ml << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"Malaysia"}).count %>
+
+<% @tl = Array.new %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>0..10},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>10..20},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>20..30},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"Taiwan"}).count %>
+<% @tl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"Taiwan"}).count %>
+
+<%= javascript_tag do %>
+var chart1; // globally available
+$(document).ready(function() {
+      chart1 = new Highcharts.Chart({
+         chart: {
+            renderTo: 'container',
+            type: 'line'
+         },
+         title: {
+            text: 'Student Results'
+         },
+         xAxis: {
+            categories: <%= raw @xaxis.to_json %>
+         },
+         yAxis: {
+            title: {
+               text: 'No. Of Students'
+            }
+         },
+         series: [
+         {
+            name: 'China',
+            data: <%= @cl %>
+         },
+         {
+            name: 'Singapore',
+            data: <%= @sl %>
+         },
+                  {
+            name: 'Taiwan',
+            data: <%= @tl %>
+         },
+                  {
+            name: 'Malaysia',
+            data: <%= @ml %>
+         },
+                  {
+            name: 'Hong Kong',
+            data: <%= @hkl %>
+         }
+         ]
+      });
+   });
+<% end %>
+<div id="container" style="width: 100%; height: 400px"></div>

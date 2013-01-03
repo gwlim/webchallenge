@@ -22,7 +22,9 @@ if Rhconfig.table_exists?
 		column :time_limit
 		column :challenge_start
 		column :challenge_end
+
 		column ("Manual Challenge") {|co| status_tag (co.challenge_override ? "ENABLED" : "DISABLED"), (co.challenge_override ? 'ok' : 'error') unless co.challenge_override.nil?}
+		column ("Challenge State") {|cs| status_tag (cs.challenge_on ? "ACTIVE" : "INACTIVE"), (cs.challenge_override ? 'ok' : 'error') unless cs.challenge_on.nil?}
 		column ("Challenge Control") {|cc| status_tag (cc.challenge_override ? "OFF" : "ON"), (cc.challenge_override ? 'error' : 'ok') unless cc.challenge_override.nil?}
 		default_actions
 	  	end

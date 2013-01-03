@@ -1,13 +1,14 @@
 <%-## if display question contains comma render multiresponse else render single response -%>
+<% if current_student.language=="zh-CN" %>
+<%= javascript_include_tag "challenge-cn", :async => true %>
+<% elsif current_student.language=="zh-TW"%>
+<%= javascript_include_tag "challenge-tw", :async => true %>
+<% else %>
+<%= javascript_include_tag "challenge-en", :async => true %>
+<% end %>
 <div id="container">
 
 			<%= render 'questiondisplay' %>
 
 </div>
-<% if current_student.language=="zh-CN" %>
-<%= javascript_include_tag "challenge-cn" %>
-<% elsif current_student.language=="zh-TW"%>
-<%= javascript_include_tag "challenge-tw" %>
-<% else %>
-<%= javascript_include_tag "challenge-en" %>
-<% end %>
+

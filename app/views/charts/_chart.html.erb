@@ -34,7 +34,7 @@
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>30..40},:country=>"Singapore"}).count %>
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>40..50},:country=>"Singapore"}).count %>
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>50..60},:country=>"Singapore"}).count %>
-<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:complete<div id="container" style="width: 100%; height: 600px"></div>d=>true,:total_score=>60..70},:country=>"Singapore"}).count %>
+<% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>60..70},:country=>"Singapore"}).count %>
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>70..80},:country=>"Singapore"}).count %>
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>80..90},:country=>"Singapore"}).count %>
 <% @sl << Student.find(:all,:joins=>:challenge,:conditions=>{:challenges=>{:completed=>true,:total_score=>90..100},:country=>"Singapore"}).count %>

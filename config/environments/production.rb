@@ -15,7 +15,7 @@ WebChallenge::Application.configure do
   config.static_cache_control = "max-age=2592000,public"
 
   # Enable Rails Assets
-  config.assets.enabled = true
+  config.assets.enabled = false
 
   # Compress JavaScripts and CSS
   config.assets.compress = true

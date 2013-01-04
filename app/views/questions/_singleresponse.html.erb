@@ -29,8 +29,8 @@
 	</label>
 	</p>
 	<% if @question.question_idx==100 %>
-	<%= f.submit(:value=>t('finish'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
+		<%= f.submit(:value=>t('finish'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
 	<% else %>
-	<%= f.submit(:value=>t('next'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
+		<%= f.submit(:value=>t('next'),:class =>"large blue awesome",:disable_with=>t('loading')) %>
 	<% end %>
 <% end %>

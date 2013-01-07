@@ -18,6 +18,7 @@ production:
   encoding: utf8
   reconnect: true
   pool: 5
+  wait_timeout: 31536000
   database: <%=ENV['OPENSHIFT_APP_NAME']%>
   username: <%=ENV['OPENSHIFT_MYSQL_DB_USERNAME']%>
   password: <%=ENV['OPENSHIFT_MYSQL_DB_PASSWORD']%>

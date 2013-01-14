@@ -1,0 +1,40 @@
+<div id="container">
+	<div id="content">
+		<div class="grid_7 left">
+			<div class="panel01">
+					<h1>
+						<%=t('student_result')%>
+					</h1>
+						<p><%=t('Dear')%> <%= current_student.first_name %> <%= current_student.last_name %></p> 
+						<p><%=t('thank_participation')%> <%= Time.now.year %>.</p>
+						<% if current_student.language=='zh-TW' %>
+						<div class="score-bg-tw">
+						<% elsif current_student.language=='zh-CN'%>
+						<div class="score-bg-cn">
+						<% else %>
+						<div class="score-bg-en">
+						<% end %>
+						<div class="score-num"><b><%= current_student.challenge.total_score %></b></div>
+						</div>
+						<p><%=t('notify')%></p>
+					<span class="forgot-password">
+						<%= link_to t('edit_profile_back'), student_root_path %><br />
+					</span>
+			</div><!-- /.panel02 -->
+		</div><!-- /.grid-5 -->
+				<div class="grid_3 right">
+				<div class="panel02">
+					<div class="edit-profile">
+						<%= image_tag("edit-profile-thumb.jpg",:alt =>"profile",:class=>"right") %>
+						<h2>
+							<%=t('settings')%>
+						</h2>
+						<ul class="list">
+						<li><%= link_to t('edit_profile_header'), edit_student_registration_path %></li>
+						<li><%= link_to t('sign_out'), destroy_student_session_path, :method => :delete %></li>
+					</ul>
+					</div><!-- /.edit-profile -->
+				</div><!-- /.panel02 -->
+			</div><!-- /.grid-5 -->
+	</div><!-- /#content -->		
+</div><!-- /container -->

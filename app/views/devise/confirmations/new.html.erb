@@ -1,0 +1,27 @@
+<div id="container">
+	<div id="content">
+		<div class="grid_10">			
+			<h2>
+				<%= t("confirm_header",:href=>link_to(t("sign_up_href"),new_student_registration_path)).html_safe %>
+			</h2>
+				<p><%= t("confirm_instruct")%></p>
+				<%= form_for(resource,:as=>resource_name,:url=>confirmation_path(resource_name),:html => {:method=>:post }) do |f| %>
+				<%= devise_error_messages! %>
+						<div class="row">
+							<%= f.email_field(:email,:class=>"wide-textbox") %>
+						</div><!-- /.row -->
+						<div class="row">
+							 <%= add_recaptcha_tag %>
+						</div><!-- /.row -->
+						<div class="row">
+							<%= f.submit(:value=>t('submit'),:class =>"large blue awesome",:disable_with =>t('submitting')) %>
+						</div><!-- /.row -->
+						<div class="row">
+							<span class="forgot-password">
+							<%= link_to t("back_to_sign_in"), new_session_path(resource_name) %>
+							</span>
+						</div><!-- /.row -->
+					<% end %>
+		</div><!-- /.grid-5 -->
+	</div><!-- /#content -->
+</div><!-- /container -->

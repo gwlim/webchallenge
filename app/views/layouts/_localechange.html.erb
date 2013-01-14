@@ -1,0 +1,11 @@
+ <%= form_tag student_session_path,:method=>'get', :class=> 'locale' do %>
+      <%= select_tag 'locale', 
+        options_for_select([
+	[t("English"),"en-US"], 
+	[t("Simplified_Chinese"),"zh-CN"], 
+	[t("Traditional_Chinese"),"zh-TW"], 
+	],:selected => params[:locale]
+	).html_safe,:onchange=>'this.form.submit()',:style=>"font-family: Arial Unicode MS;" %>
+<noscript><%= submit_tag 'submit' %></noscript>
+<% end %>
+

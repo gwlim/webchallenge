@@ -1,0 +1,432 @@
+en-US:
+  hi: Hi
+  webchallenge: "Red Hat Challenge 2012"
+  passwordclick: "If you have requested to reset your password, click here to reset your password."
+  passwordignore: "If you didn't request this, please ignore this email."
+  passwordinfo: "Your password won't change until you access the link above and create a new one."
+  confirmthanks: "Thank you for registering for Red Hat Challenge"
+  confirmclick: "Please click here to confirm and login to your account."
+  confirminfo: 'For more information on prizes, blogs and videos, visit <a href="http://apac.redhat.com/redhatchallenge2012" target="_blank">http://apac.redhat.com/redhatchallenge2012</a>'
+  noreply: "This is an auto-generated email, please do not reply."
+
+  prize_intro: "<h2>The gifts and rewards for the winners</h2><p><b>The champion's prizes are:</b></p><ul><li>Samsung SIII mobile phone</li><li>Making 1 choice from RH300 and RH318 training or internship in Red Hat Beijing office OR Singapore office for a month.** </li><li>A Raspberry Pi and a Red Hat branded keyboard</li><li>Winner’s trophy and certificate</li></ul><p><b>Finalists will each receive:</b></p><ul><li>A Raspberry Pi and a Red Hat branded keyboard.</li><li>Trophy for participation and certificate</li></ul>"
+
+  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** Internship does not include travelling and accommodation expenses</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">Red Hat reserves the right at any time and at its sole and absolute discretion, to substitute, withdraw or cancel any prize without prior notice and without having to disclose any reason therefor and without any payment or compensation whatsoever in lieu thereof. All prizes are non-refundable and non-exchangeable for cash or credit.</p>'
+
+  text_intro: '<h1>TAKE THE ULTIMATE CHALLENGE AND WIN!</h1><p>Ever wondered if you are the best in your field? Ever wondered how you will fare against others?</p><p>Now you can see how good you really are!</p><p>Red Hat Challenge 2012 contestants will face off against each other in a multiple choice questions in the first round then face-to-face interviews in the second round culminating in the final round in Beijing, China.</p><p>Just 3 rounds to be crowned the ultimate Red Hatter and win great %{href}!</p><ul><li>Round 1 : 2 Nov</li><li>Round 2 : Week of 12 Nov</li><li>Round 3 : 15 December</li></ul><h3>Eligibility</h3><p>If you are an undergraduate / full-time student still attending a university, polytechnic or private school in China, Hong Kong, Malaysia, Singapore or Taiwan then you can contest in this challenge.</p><h3>Preparation</h3><p>Each contestant will be tested on Red Hat Linux System Administration, Network Administration, Security Administration and
+Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.linkedin.com/groups/Red-Hat-Certified-Professionals-in-3124596?mostPopular=&ampgid=3124596" target="_blank">community groups</a> (if you haven’t),follow us on <a href="http://twitter.com/red_hat_apac" target="_blank">twitter</a> or just fan us on <a href="http://www.facebook.com/RedhatAPAC" target="_blank">facebook</a> to learn as much as you can to win.</p>'
+
+  registernow_href: REGISTER NOW
+  prizes_href: prizes
+  sign_in_header: Sign In <span>( %{href} )</span>
+  sign_up_href: Don't have an account? Register Now!
+  forgot_password_href: Forgot password?
+  confirmation_email_href: Didn't receive confirmation email?
+
+  support_mail: Should you have any problems with the website, please email us at <b>redhatchallenge@redhat.com</b>.
+
+  registration_header: Registration
+  login_legend: Login Information
+  personal_info_legend: Personal Information
+  back_to_sign_in: ← Back to sign in page
+
+  activate_thank: Thank you for your registration!
+  activate_instruction: Please activate your account with the link provided in the confirmation email that is sent to you.
+  activate_nomail: If you do not get the email, please click %{href}
+  activate_here: here
+
+  edit_profile_header: Edit Profile
+  edit_profile_back: ← Back to Student Home Page
+
+  visit_blog: For more information about Red Hat Challenge 2012, visit our blog at %{href}
+  blog_en: "http://apac.redhat.com/redhatchallenge2012/blog/en/"
+  blog_cn: "http://apac.redhat.com/redhatchallenge2012/blog/cn/"
+  blog_tw: "http://apac.redhat.com/redhatchallenge2012/blog/tw/"
+
+  hi: Hi
+
+  forgot_header: Forgot Password? <span>( %{href} )</span>
+  forgot_instruct: Please enter your email address below. We will re-send you a link to reset your password.
+
+  edit_password_header: Change Password
+  edit_password_instruct: Please enter your new password below.
+
+  confirm_header: Resend Confirmation Email <span>( %{href} )</span>
+  confirm_instruct: Please enter your email address below. We will re-send you a link to verify your account.
+
+  white_list: To ensure that our messages get to you (and don't go to your junk or bulk email folders), please add <b>registration@redhatchallenge-rhc.rhcloud.com</b> to your address book.
+
+  helpers:
+      label:
+       session:
+           email: Email Address
+           password: Password
+
+  remember_me: Remember Me
+
+  change_password: Change Password
+
+  activerecord:
+     models:
+       student: Student
+       challenge: Challenge
+       question: Question
+     attributes:
+        student:
+           email: Email Address
+           password: Password
+           password_confirmation: Password Confirmation
+           current_password: Current Password
+           first_name: First Name
+           last_name: Last Name
+           contact_number: Contact Number
+           school: Schools/Institution
+           country: Country
+           language: Language
+           lecturer_name: Lecturer
+           lecturer_email: Lecturer Email
+           terms: Terms Of Service
+
+  tos: I accept the terms of use of this quiz
+
+  student_home: Dashboard
+
+  settings: Settings
+
+  prompt_start: To start your quiz, please click on the 'Start Quiz' button below.
+
+  ready: 'Are you ready to start?'
+
+  welcome_home: Welcome to Red Hat Challenge
+
+  Question: Question
+
+  timer: TIMER
+
+  sign_in: Sign In
+
+  sign_out: Sign Out
+
+  signing_in: Signing In...
+
+  submit: Submit
+
+  submitting: Submitting...
+
+  update: Update
+
+  updating: Updating...
+
+  next: Submit & Next
+
+  loading: Loading...
+
+  start_quiz: Start Quiz &raquo;
+
+  starting: Starting Quiz
+
+  finish: Finish & Submit
+
+  see_result: See Result
+
+  student_result: Student Result
+
+  Dear: Dear
+
+  thank_participation: Thank you for participating in Red Hat Challenge
+
+  notify: We will notify you via email if you made it to the second round of the challenge.
+
+  recaptcha:
+    errors:
+      verification_failed: 'There was an error with the recaptcha code below. Please re-enter the code and click submit.'
+      recaptcha_unavailable: 'Recaptcha is currently unavailable'
+      incorrect-captcha-sol: 'Error:'
+  China: China
+  Hongkong: Hong Kong
+  Malaysia: Malaysia
+  Philippines: Philippines
+  Singapore: Singapore
+  Taiwan: Taiwan
+  Thailand: Thailand
+
+  English: English
+  Simplified_Chinese: Simplified Chinese
+  Traditional_Chinese: Traditional Chinese
+  active_admin:
+    dashboard: Dashboard
+    dashboard_welcome:
+      welcome: "Welcome to Active Admin. This is the default dashboard page."
+      call_to_action: "To add dashboard sections, checkout 'app/admin/dashboards.rb'"
+    view: "View"
+    edit: "Edit"
+    delete: "Delete"
+    delete_confirmation: "Are you sure you want to delete this?"
+    new_model: "New %{model}"
+    create_model: "New %{model}"
+    edit_model: "Edit %{model}"
+    update_model: "Edit %{model}"
+    delete_model: "Delete %{model}"
+    details: "%{model} Details"
+    cancel: "Cancel"
+    empty: "Empty"
+    previous: "Previous"
+    next: "Next"
+    download: "Download:"
+    has_many_new: "Add New %{model}"
+    has_many_delete: "Delete"
+    filter: "Filter"
+    clear_filters: "Clear Filters"
+    search_field: "Search %{field}"
+    equal_to: "Equal To"
+    greater_than: "Greater Than"
+    less_than: "Less Than"
+    main_content: "Please implement %{model}#main_content to display content."
+    logout: "Logout"
+    sidebars:
+      filters: "Filters"
+    pagination:
+      empty: "No %{model} found"
+      one: "Displaying <b>1</b> %{model}"
+      one_page: "Displaying <b>all %{n}</b> %{model}"
+      multiple: "Displaying %{model} <b>%{from}&nbsp;-&nbsp;%{to}</b> of <b>%{total}</b> in total"
+      entry:
+        one: "entry"
+        other: "entries"
+    any: "Any"
+    blank_slate:
+      content: "There are no %{resource_name} yet."
+      link: "Create one"
+    batch_actions:
+      button_label: "Batch Actions"
+      delete_confirmation: "Are you sure you want to delete these %{plural_model}? You won't be able to undo this."
+      succesfully_destroyed:
+        one: "Successfully destroyed 1 %{model}"
+        other: "Successfully destroyed %{count} %{plural_model}"
+      selection_toggle_explanation: "(Toggle Selection)"
+      link: "Create one"
+      action_label: "%{title} Selected"
+      labels:
+        destroy: "Delete"
+    comments:
+      body: "Body"
+      author: "Author"
+      title: "Comment"
+      add: "Add Comment"
+      resource: "Resource"
+      no_comments_yet: "No comments yet."
+      title_content: "Comments (%{count})"
+      errors:
+        empty_text: "Comment wasn't saved, text was empty."
+    devise:
+      login:
+        title: "Login"
+        remember_me: "Remember me"
+        submit: "Login"
+      reset_password:
+        title: "Forgot your password?"
+        submit: "Reset My Password"
+      change_password:
+        title: "Change your password"
+        submit: "Change my password"
+      links:
+        sign_in: "Sign in"
+        forgot_your_password: "Forgot your password?"
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: ! '%Y-%m-%d'
+      long: ! '%B %d, %Y'
+      short: ! '%b %d'
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: ! '%{count} days'
+      x_minutes:
+        one: 1 minute
+        other: ! '%{count} minutes'
+      x_months:
+        one: 1 month
+        other: ! '%{count} months'
+      x_seconds:
+        one: 1 second
+        other: ! '%{count} seconds'
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: must be accepted
+      blank: can't be blank
+      confirmation: doesn't match Confirmation
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      odd: must be odd
+      record_invalid: ! 'Validation failed: %{errors}'
+      taken: has already been registered
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+    template:
+      body: ! 'There were problems with the following fields:'
+      header:
+        one: 1 error prohibited this %{model} from being saved
+        other: ! '%{count} errors prohibited this %{model} from being saved'
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ','
+        format: ! '%u%n'
+        precision: 2
+        separator: .
+        significant: false
+        strip_insignificant_zeros: false
+        unit: $
+    format:
+      delimiter: ! ','
+      precision: 3
+      separator: .
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', and '
+      two_words_connector: ! ' and '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
+    pm: pm
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails

@@ -37,12 +37,13 @@ class DeviseCreateAdministrators < ActiveRecord::Migration
     end
 
     # Create a default user
-    Administrator.create!(:email => 'administrator@example.com', :password => 'password', :password_confirmation => 'password')
+
 
     add_index :administrators, :email,                :unique => true
     add_index :administrators, :reset_password_token, :unique => true
     # add_index :administrators, :confirmation_token,   :unique => true
     # add_index :administrators, :unlock_token,         :unique => true
     # add_index :administrators, :authentication_token, :unique => true
+    Administrator.create!(:email => 'administrator@example.com', :password => 'password', :password_confirmation => 'password')
   end
 end

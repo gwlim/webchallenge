@@ -77,12 +77,12 @@ WebChallenge::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => false,
-    :address => "mail.studio912.sg",
+    :address => "mail.example.com",
     :port => 587,
     :domain => "rhcloud.com",
     :authentication => :plain,
-    :user_name => "registration@studio912.sg",
-    :password => "redhat123"
+    :user_name => "username@example.com",
+    :password => "password"
   }
 
   #The Line below defines Gmail SMTP Server
@@ -98,7 +98,7 @@ WebChallenge::Application.configure do
   #config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.default_url_options = {
-    :host => "redhatchallenge-rhc.rhcloud.com",
+    :host => "webchallenge-example.rhcloud.com",
     :protocol => 'https'
   }
 

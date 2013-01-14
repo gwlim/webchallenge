@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "registration@redhatchallenge-rhc.rhcloud.com"
+  config.mailer_sender = "registration@webchallenge-example.rhcloud.com"
 
   # Configure the class responsible to send e-mails.
   config.mailer = "StudentMailer"
@@ -198,7 +198,7 @@ Devise.setup do |config|
   # config.navigational_formats = ["*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  # By Rights Ruby says destroy session should be implement via :delete 
+  # By Rights Ruby says destroy session should be implement via :delete
   # but since it is not working we will use get instead
     config.sign_out_via = [ :delete , :get ]
   # config.sign_out_via = :get

@@ -1,20 +1,20 @@
 en-US:
   hi: Hi
-  webchallenge: "Red Hat Challenge 2012"
+  webchallenge: "WebChallenge"
   passwordclick: "If you have requested to reset your password, click here to reset your password."
   passwordignore: "If you didn't request this, please ignore this email."
   passwordinfo: "Your password won't change until you access the link above and create a new one."
-  confirmthanks: "Thank you for registering for Red Hat Challenge"
+  confirmthanks: "Thank you for registering for WebChallenge"
   confirmclick: "Please click here to confirm and login to your account."
   confirminfo: 'For more information on prizes, blogs and videos, visit <a href="http://apac.redhat.com/redhatchallenge2012" target="_blank">http://apac.redhat.com/redhatchallenge2012</a>'
   noreply: "This is an auto-generated email, please do not reply."
 
-  prize_intro: "<h2>The gifts and rewards for the winners</h2><p><b>The champion's prizes are:</b></p><ul><li>Samsung SIII mobile phone</li><li>Making 1 choice from RH300 and RH318 training or internship in Red Hat Beijing office OR Singapore office for a month.** </li><li>A Raspberry Pi and a Red Hat branded keyboard</li><li>Winner’s trophy and certificate</li></ul><p><b>Finalists will each receive:</b></p><ul><li>A Raspberry Pi and a Red Hat branded keyboard.</li><li>Trophy for participation and certificate</li></ul>"
+  prize_intro: "<h2>The gifts and rewards for the winners</h2><p><b>The champion's prizes are:</b></p><ul><li>Prize 1</li><li>Prize 2</li><li>A Raspberry Pi and a We branded keyboard</li><li>Winner’s trophy and certificate</li></ul><p><b>Finalists will each receive:</b></p><ul><li>A Raspberry Pi and a We branded keyboard.</li><li>Trophy for participation and certificate</li></ul>"
 
-  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** Internship does not include travelling and accommodation expenses</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">Red Hat reserves the right at any time and at its sole and absolute discretion, to substitute, withdraw or cancel any prize without prior notice and without having to disclose any reason therefor and without any payment or compensation whatsoever in lieu thereof. All prizes are non-refundable and non-exchangeable for cash or credit.</p>'
+  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** Internship does not include travelling and accommodation expenses</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">We reserves the right at any time and at its sole and absolute discretion, to substitute, withdraw or cancel any prize without prior notice and without having to disclose any reason therefor and without any payment or compensation whatsoever in lieu thereof. All prizes are non-refundable and non-exchangeable for cash or credit.</p>'
 
-  text_intro: '<h1>TAKE THE ULTIMATE CHALLENGE AND WIN!</h1><p>Ever wondered if you are the best in your field? Ever wondered how you will fare against others?</p><p>Now you can see how good you really are!</p><p>Red Hat Challenge 2012 contestants will face off against each other in a multiple choice questions in the first round then face-to-face interviews in the second round culminating in the final round in Beijing, China.</p><p>Just 3 rounds to be crowned the ultimate Red Hatter and win great %{href}!</p><ul><li>Round 1 : 2 Nov</li><li>Round 2 : Week of 12 Nov</li><li>Round 3 : 15 December</li></ul><h3>Eligibility</h3><p>If you are an undergraduate / full-time student still attending a university, polytechnic or private school in China, Hong Kong, Malaysia, Singapore or Taiwan then you can contest in this challenge.</p><h3>Preparation</h3><p>Each contestant will be tested on Red Hat Linux System Administration, Network Administration, Security Administration and
-Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.linkedin.com/groups/Red-Hat-Certified-Professionals-in-3124596?mostPopular=&ampgid=3124596" target="_blank">community groups</a> (if you haven’t),follow us on <a href="http://twitter.com/red_hat_apac" target="_blank">twitter</a> or just fan us on <a href="http://www.facebook.com/RedhatAPAC" target="_blank">facebook</a> to learn as much as you can to win.</p>'
+  text_intro: '<h1>TAKE THE ULTIMATE CHALLENGE AND WIN!</h1><p>Ever wondered if you are the best in your field? Ever wondered how you will fare against others?</p><p>Now you can see how good you really are!</p><p>WebChallenge contestants will face off against each other in a multiple choice questions in the first round then face-to-face interviews in the second round culminating in the final round.</p><p>Just 3 rounds to be crowned the ultimate Weter and win great %{href}!</p><ul><li>Round 1 : Date</li><li>Round 2 : Date</li><li>Round 3 : Date</li></ul><h3>Eligibility</h3><p>If you are an undergraduate / full-time student still attending a university, polytechnic or private school in China, Hong Kong, Malaysia, Singapore or Taiwan then you can contest in this challenge.</p><h3>Preparation</h3><p>Each contestant will be tested on We Linux System Administration, Network Administration, Security Administration and
+Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.linkedin.com/groups/Red-Hat-Certified-Professionals-in-3124596?mostPopular=&ampgid=3124596" target="_blank">community groups</a> (if you haven’t),follow us on <a href="http://example.com" target="_blank">twitter</a> or just fan us on <a href="http://www.example.com/" target="_blank">facebook</a> to learn as much as you can to win.</p>'
 
   registernow_href: REGISTER NOW
   prizes_href: prizes
@@ -23,7 +23,7 @@ Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.l
   forgot_password_href: Forgot password?
   confirmation_email_href: Didn't receive confirmation email?
 
-  support_mail: Should you have any problems with the website, please email us at <b>redhatchallenge@redhat.com</b>.
+  support_mail: Should you have any problems with the website, please email us at <b>webchallenge@example.com</b>.
 
   registration_header: Registration
   login_legend: Login Information
@@ -38,10 +38,10 @@ Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.l
   edit_profile_header: Edit Profile
   edit_profile_back: ← Back to Student Home Page
 
-  visit_blog: For more information about Red Hat Challenge 2012, visit our blog at %{href}
-  blog_en: "http://apac.redhat.com/redhatchallenge2012/blog/en/"
-  blog_cn: "http://apac.redhat.com/redhatchallenge2012/blog/cn/"
-  blog_tw: "http://apac.redhat.com/redhatchallenge2012/blog/tw/"
+  visit_blog: For more information about WebChallenge, visit our blog at %{href}
+  blog_en: "http://www.example.com/blog/en/"
+  blog_cn: "http://www.example.com/blog/cn/"
+  blog_tw: "http://www.example.com/blog/tw/"
 
   hi: Hi
 
@@ -97,7 +97,7 @@ Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.l
 
   ready: 'Are you ready to start?'
 
-  welcome_home: Welcome to Red Hat Challenge
+  welcome_home: Welcome to WebChallenge
 
   Question: Question
 
@@ -133,7 +133,7 @@ Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.l
 
   Dear: Dear
 
-  thank_participation: Thank you for participating in Red Hat Challenge
+  thank_participation: Thank you for participating in WebChallenge
 
   notify: We will notify you via email if you made it to the second round of the challenge.
 

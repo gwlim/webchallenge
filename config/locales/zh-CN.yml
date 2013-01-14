@@ -1,19 +1,19 @@
 zh-CN:
   hi: 你好
-  webchallenge: "红帽2012挑战赛"
+  webchallenge: "WebChallenge挑战赛"
   passwordclick: '如果你已要求重置密码，点击这里重设密码。'
   passwordignore: '如果你没有这个要求，请忽略这封邮件。'
   passwordinfo: '您的密码将不会改变，直到你访问上面的链接，并创建一个新的。'
-  confirmthanks: '谢谢您参加红帽挑战赛'
+  confirmthanks: '谢谢您参加WebChallenge挑战赛'
   confirmclick: '请点击此处确认并登录到您的帐户。'
-  confirminfo: '想知道更多关于奖品及挑战详情，请登陆：<a href="http://apac.redhat.com/redhatchallenge2012" target="_blank">http://apac.redhat.com/redhatchallenge2012</a>'
+  confirminfo: '想知道更多关于奖品及挑战详情，请登陆：<a href="http://example.com" target="_blank">http://example.com</a>'
   noreply: '这是一个自动生成的电子邮件，请不要回复。'
 
-  prize_intro: "<h2>优胜者会获得奖品和荣誉。</h2><p><b>冠军的奖品为：</b></p><ul><li>三星SIII手机</li><li>从RH300和RH318培训课中任选一门，或者到红帽北京公司或新加坡公司进行为期一个月的实习** </li><li>一部Raspberry Pi和一个带有红帽品牌的键盘</li><li>冠军奖杯和证书</li></ul><p><b>入围决赛的选手每人将获得：</b></p><ul><li> 一部Raspberry Pi和一个带有红帽品牌的键盘</li><li>参加者奖杯和证书</li></ul>"
+  prize_intro: "<h2>优胜者会获得奖品和荣誉。</h2><p><b>冠军的奖品为：</b></p><ul><li>三星SIII手机</li><li>从RH300和RH318培训课中任选一门，或者到WebChallenge北京公司或新加坡公司进行为期一个月的实习** </li><li>一部Raspberry Pi和一个带有WebChallenge品牌的键盘</li><li>冠军奖杯和证书</li></ul><p><b>入围决赛的选手每人将获得：</b></p><ul><li> 一部Raspberry Pi和一个带有WebChallenge品牌的键盘</li><li>参加者奖杯和证书</li></ul>"
 
-  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** 实习不包括差旅和食宿的费用。</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">红帽拥 有所有奖品的解释权，无可异议。所有奖品 不得退换现金或被交易。</p>'
+  prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** 实习不包括差旅和食宿的费用。</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">WebChallenge拥 有所有奖品的解释权，无可异议。所有奖品 不得退换现金或被交易。</p>'
 
-  text_intro: '<h1>参加红帽挑战赛，赢在当下!</h1><p>想知道你是IT领域中的佼佼者，想证明你是这个领域最优秀的人才并和其它志趣相同的同僚一比高下吗？</p><p>现在就给你一个施展才华的机会！</p><p>红帽2012挑战赛第一轮将以多选题的方式相互对决，然后参加第二轮的视频面试，获胜者将在北京参加最后一轮的终极挑战。</p><p>脱颖而出的%{href}将荣膺红帽王！</p><ul><li>第一轮-11月2日</li><li>第二轮-11月12日周内</li><li>第三轮-12月15日</li></ul><h3>报名资格：</h3><p>如果你是就读于中国大陆、香港、马来西亚、新加坡和台湾的大学，工学院或私立学 校的本科/全日制学生，就有资格参加本次挑战。</p><h3>准备工作：</h3><p>每名参赛选手将测试Red Hat Linux System Administration, Network Administration, Security Administration和Virtualization任务。</p><p>阅读完以上内容，请登录红帽官方网站<a href="http://cn.redhat.com/" target="_blank">cn.redhat.com</a>,或者关注我们的<a href="http://www.weibo.com/redhatchina" target="_blank">新浪微博</a>，来学习更多想要赢得挑战赛的内容。</p>'
+  text_intro: '<h1>参加WebChallenge挑战赛，赢在当下!</h1><p>想知道你是IT领域中的佼佼者，想证明你是这个领域最优秀的人才并和其它志趣相同的同僚一比高下吗？</p><p>现在就给你一个施展才华的机会！</p><p>WebChallenge挑战赛第一轮将以多选题的方式相互对决，然后参加第二轮的视频面试，获胜者将在北京参加最后一轮的终极挑战。</p><p>脱颖而出的%{href}将荣膺WebChallenge王！</p><ul><li>第一轮-11月2日</li><li>第二轮-11月12日周内</li><li>第三轮-12月15日</li></ul><h3>报名资格：</h3><p>如果你是就读于中国大陆、香港、马来西亚、新加坡和台湾的大学，工学院或私立学 校的本科/全日制学生，就有资格参加本次挑战。</p><h3>准备工作：</h3><p>每名参赛选手将测试Red Hat Linux System Administration, Network Administration, Security Administration和Virtualization任务。</p><p>阅读完以上内容，请登录WebChallenge官方网站<a href="http://cn.redhat.com/" target="_blank">cn.redhat.com</a>,或者关注我们的<a href="http://www.weibo.com/redhatchina" target="_blank">新浪微博</a>，来学习更多想要赢得挑战赛的内容。</p>'
 
   registernow_href: 立即报名
   prizes_href: 优胜者
@@ -22,7 +22,7 @@ zh-CN:
   forgot_password_href: 忘记密码？
   confirmation_email_href: 没有收到确认电子邮件？
 
-  support_mail: 如果你对于网站或者挑战赛有任何问题，请发邮件至：<b>redhatchallenge@redhat.com</b>。
+  support_mail: 如果你对于网站或者挑战赛有任何问题，请发邮件至：<b>redhatchallenge@example.com</b>。
 
   registration_header: 注册
   login_legend: 登录资料
@@ -37,10 +37,10 @@ zh-CN:
   edit_profile_header: 修改个人简介
   edit_profile_back: ← 返回学生主页
 
-  visit_blog: 更多关于红帽挑战赛2012的信息，请访问我们的博客：%{href}
-  blog_en: "http://apac.redhat.com/redhatchallenge2012/blog/en/"
-  blog_cn: "http://apac.redhat.com/redhatchallenge2012/blog/cn/"
-  blog_tw: "http://apac.redhat.com/redhatchallenge2012/blog/tw/"
+  visit_blog: 更多关于WebChallenge挑战赛的信息，请访问我们的博客：%{href}
+  blog_en: "http://example.com/blog/en/"
+  blog_cn: "http://example.com/blog/cn/"
+  blog_tw: "http://example.com/blog/tw/"
 
   hi: 你好
 
@@ -53,7 +53,7 @@ zh-CN:
   confirm_header: 重发确认电邮 <span>( %{href} )</span>
   confirm_instruct: 请在以下输入您的电子邮件地址。我们会重新给你一个链接以验证你的帐户。
 
-  white_list: 为确保您能够正常收到确认邮件，请将<b>registration@redhatchallenge-rhc.rhcloud.com</b>添加在您的联系人列表或白名单中。
+  white_list: 为确保您能够正常收到确认邮件，请将<b>registration@example.com</b>添加在您的联系人列表或白名单中。
 
   helpers:
       label:
@@ -95,7 +95,7 @@ zh-CN:
 
   ready: '你准备好开始了吗？'
 
-  welcome_home: 欢迎红帽挑战
+  welcome_home: 欢迎WebChallenge挑战
 
   Question: 问题
 
@@ -130,7 +130,7 @@ zh-CN:
 
   Dear: 亲爱的
 
-  thank_participation: 感谢您参加红帽挑战赛
+  thank_participation: 感谢您参加WebChallenge挑战赛
 
   notify:  如果您顺利进入第二轮比赛，我们会通过电子邮件通知您。
 

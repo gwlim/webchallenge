@@ -50,8 +50,8 @@ en-US:
       failure: 'Could not authorize you from %{kind} because "%{reason}".'
     mailer:
       confirmation_instructions:
-        subject: 'Red Hat Challenge 2012 Confirmation Instructions'
+        subject: ' Challenge 2012 Confirmation Instructions'
       reset_password_instructions:
-        subject: 'Red Hat Challenge 2012 Reset Password Instructions'
+        subject: ' Challenge 2012 Reset Password Instructions'
       unlock_instructions:
-        subject: 'Red Hat Challenge 2012 Unlock Instructions'
+        subject: ' Challenge 2012 Unlock Instructions'

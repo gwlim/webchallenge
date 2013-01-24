@@ -13,7 +13,7 @@ zh-CN:
 
   prize_condition: '<p style="background: #e1f3fe; padding: 10px; border: 1px solid #c3dfef; font-size: 75%; color: #444444;">** 实习不包括差旅和食宿的费用。</p><p style="background: #ffe2e2; padding: 10px; border: 1px solid #ebc1c1; font-size: 75%; color: #444444;">WebChallenge拥 有所有奖品的解释权，无可异议。所有奖品 不得退换现金或被交易。</p>'
 
-  text_intro: '<h1>参加WebChallenge挑战赛，赢在当下!</h1><p>想知道你是IT领域中的佼佼者，想证明你是这个领域最优秀的人才并和其它志趣相同的同僚一比高下吗？</p><p>现在就给你一个施展才华的机会！</p><p>WebChallenge挑战赛第一轮将以多选题的方式相互对决，然后参加第二轮的视频面试，获胜者将在北京参加最后一轮的终极挑战。</p><p>脱颖而出的%{href}将荣膺WebChallenge王！</p><ul><li>第一轮-11月2日</li><li>第二轮-11月12日周内</li><li>第三轮-12月15日</li></ul><h3>报名资格：</h3><p>如果你是就读于中国大陆、香港、马来西亚、新加坡和台湾的大学，工学院或私立学 校的本科/全日制学生，就有资格参加本次挑战。</p><h3>准备工作：</h3><p>每名参赛选手将测试Red Hat Linux System Administration, Network Administration, Security Administration和Virtualization任务。</p><p>阅读完以上内容，请登录WebChallenge官方网站<a href="http://cn.redhat.com/" target="_blank">cn.redhat.com</a>,或者关注我们的<a href="http://www.weibo.com/redhatchina" target="_blank">新浪微博</a>，来学习更多想要赢得挑战赛的内容。</p>'
+  text_intro: '<h1>参加WebChallenge挑战赛，赢在当下!</h1><p>想知道你是IT领域中的佼佼者，想证明你是这个领域最优秀的人才并和其它志趣相同的同僚一比高下吗？</p><p>现在就给你一个施展才华的机会！</p><p>WebChallenge挑战赛第一轮将以多选题的方式相互对决，然后参加第二轮的视频面试，获胜者将在北京参加最后一轮的终极挑战。</p><p>脱颖而出的%{href}将荣膺WebChallenge王！</p><ul><li>第一轮-11月2日</li><li>第二轮-11月12日周内</li><li>第三轮-12月15日</li></ul><h3>报名资格：</h3><p>如果你是就读于中国大陆、香港、马来西亚、新加坡和台湾的大学，工学院或私立学 校的本科/全日制学生，就有资格参加本次挑战。</p><h3>准备工作：</h3><p>每名参赛选手将测试 Linux System Administration, Network Administration, Security Administration和Virtualization任务。</p><p>阅读完以上内容，请登录WebChallenge官方网站<a href="http://cn.example.com/" target="_blank">cn.example.com</a>,或者关注我们的<a href="http://www.weibo.com/examplechina" target="_blank">新浪微博</a>，来学习更多想要赢得挑战赛的内容。</p>'
 
   registernow_href: 立即报名
   prizes_href: 优胜者
@@ -22,7 +22,7 @@ zh-CN:
   forgot_password_href: 忘记密码？
   confirmation_email_href: 没有收到确认电子邮件？
 
-  support_mail: 如果你对于网站或者挑战赛有任何问题，请发邮件至：<b>redhatchallenge@example.com</b>。
+  support_mail: 如果你对于网站或者挑战赛有任何问题，请发邮件至：<b>examplechallenge@example.com</b>。
 
   registration_header: 注册
   login_legend: 登录资料

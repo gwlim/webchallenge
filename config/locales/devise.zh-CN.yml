@@ -52,8 +52,8 @@ zh-CN:
       failure: '因为 %{reason}，所以您无法从 %{kind}获得授权。'
     mailer:
       confirmation_instructions:
-        subject: '红帽2012挑战赛激活信息'
+        subject: '2012挑战赛激活信息'
       reset_password_instructions:
-        subject: '红帽2012挑战赛重置密码信息'
+        subject: '2012挑战赛重置密码信息'
       unlock_instructions:
-        subject: '红帽2012挑战赛解锁信息'
+        subject: '2012挑战赛解锁信息'

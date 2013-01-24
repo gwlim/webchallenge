@@ -51,8 +51,8 @@ zh-TW:
       failure: '從 %{kind} 無法取得認證，因為 "%{reason}".'
     mailer:
       confirmation_instructions:
-        subject: '紅帽2012挑戰賽激活信息'
+        subject: '2012挑戰賽激活信息'
       reset_password_instructions:
-        subject: '紅帽2012挑戰賽重置密碼信息'
+        subject: '2012挑戰賽重置密碼信息'
       unlock_instructions:
-        subject: '紅帽2012挑戰賽解鎖信息'
+        subject: '2012挑戰賽解鎖信息'

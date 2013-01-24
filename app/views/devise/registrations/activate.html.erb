@@ -11,11 +11,11 @@
 			<p><%=t('white_list')%></p>
 			<p>
 			<% if params[:locale]=="zh-CN" %>
-			<%= t('visit_blog',:href=>link_to(t("blog_cn"),"http://apac.redhat.com/redhatchallenge2012/blog/cn/")).html_safe  %>
+			<%= t('visit_blog',:href=>link_to(t("blog_cn"),"http://www.example.com")).html_safe  %>
 			<% elsif params[:locale]=="zh-TW" %>
-			<%= t('visit_blog',:href=>link_to(t("blog_tw"),"http://apac.redhat.com/redhatchallenge2012/blog/tw/")).html_safe  %>
+			<%= t('visit_blog',:href=>link_to(t("blog_tw"),"http://www.example.com")).html_safe  %>
 			<% else %>
-			<%= t('visit_blog',:href=>link_to(t("blog_en"),"http://apac.redhat.com/redhatchallenge2012/blog/en/")).html_safe  %>
+			<%= t('visit_blog',:href=>link_to(t("blog_en"),"http://www.example.com")).html_safe  %>
 			<% end %>
 			</p>
 			</div>

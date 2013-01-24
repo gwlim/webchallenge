@@ -64,11 +64,11 @@ class SessionsController < Devise::SessionsController
   
   def after_complete_sign_out_path_for(resource)
 	if (current_student.language=="zh-CN")
-	  return "http://apac.redhat.com/redhatchallenge2012/blog/cn/"
+	  return "http://www.example.com"
 	elsif (current_student.language=="zh-TW")
-	  return "http://apac.redhat.com/redhatchallenge2012/blog/tw/"
+	  return "http://www.example.com"
 	else
-	  return "http://apac.redhat.com/redhatchallenge2012/blog/en/"
+	  return "http://www.example.com"
 	end
   end
 end

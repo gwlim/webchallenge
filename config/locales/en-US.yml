@@ -6,7 +6,7 @@ en-US:
   passwordinfo: "Your password won't change until you access the link above and create a new one."
   confirmthanks: "Thank you for registering for WebChallenge"
   confirmclick: "Please click here to confirm and login to your account."
-  confirminfo: 'For more information on prizes, blogs and videos, visit <a href="http://apac.redhat.com/redhatchallenge2012" target="_blank">http://apac.redhat.com/redhatchallenge2012</a>'
+  confirminfo: 'For more information on prizes, blogs and videos, visit <a href="http://apac.example.com/examplechallenge2012" target="_blank">http://apac.example.com/examplechallenge2012</a>'
   noreply: "This is an auto-generated email, please do not reply."
 
   prize_intro: "<h2>The gifts and rewards for the winners</h2><p><b>The champion's prizes are:</b></p><ul><li>Prize 1</li><li>Prize 2</li><li>A Raspberry Pi and a We branded keyboard</li><li>Winner’s trophy and certificate</li></ul><p><b>Finalists will each receive:</b></p><ul><li>A Raspberry Pi and a We branded keyboard.</li><li>Trophy for participation and certificate</li></ul>"
@@ -54,7 +54,7 @@ Virtualization tasks.</p><p>Read up, surf to join our user <a href="http://www.l
   confirm_header: Resend Confirmation Email <span>( %{href} )</span>
   confirm_instruct: Please enter your email address below. We will re-send you a link to verify your account.
 
-  white_list: To ensure that our messages get to you (and don't go to your junk or bulk email folders), please add <b>registration@redhatchallenge-rhc.rhcloud.com</b> to your address book.
+  white_list: To ensure that our messages get to you (and don't go to your junk or bulk email folders), please add <b>registration@examplechallenge-rhc.rhcloud.com</b> to your address book.
 
   helpers:
       label:

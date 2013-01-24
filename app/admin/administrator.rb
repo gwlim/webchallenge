@@ -4,8 +4,8 @@ ActiveAdmin.register Administrator do
 	  Rhconfig.first.update_attribute(:registration_on,false)
 	  Rhconfig.first.update_attribute(:registration_override,true)
 		(0..1500).each do |i|
-		  if !(Student.find_by_email("redhattest#{i.to_s}@redhat.com"))
-		    @email="redhattest#{i.to_s}@redhat.com"
+		  if !(Student.find_by_email("exampletest#{i.to_s}@example.com"))
+		    @email="exampletest#{i.to_s}@example.com"
 		    @password="password"
 		    @c_no=(i*10).to_i
 		    #@lang=["en-US","zh-CN","zh-TW"].sample
@@ -33,8 +33,8 @@ ActiveAdmin.register Administrator do
 		  Rhconfig.first.update_attribute(:registration_on,false)
 		  Rhconfig.first.update_attribute(:registration_override,true)
 		(0..1500).each do |i|
-		  if (Student.find_by_email("redhattest#{i.to_s}@redhat.com"))
-		  @account=Student.find_by_email("redhattest#{i.to_s}@redhat.com").destroy
+		  if (Student.find_by_email("exampletest#{i.to_s}@example.com"))
+		  @account=Student.find_by_email("exampletest#{i.to_s}@example.com").destroy
 		  end
 		end
 		redirect_to rhchallenge_administration_students_path, :notice=> "Test Accounts Deleted"

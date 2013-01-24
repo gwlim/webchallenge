@@ -25,11 +25,11 @@
 						<td valign="top">
 		<% case (@resource.language) %>
 		<%when "zh-CN"%>
-		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-cn.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/cn"),:target=>"_blank" %>
+		<%=link_to ('<img src="https://www.example.com/email-banner-cn.jpg" alt="banner" />').html_safe,("http://www.example.com"),:target=>"_blank" %>
 		<%when "zh-TW"%>
-		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-tw.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/tw"),:target=>"_blank"%>
+		<%=link_to ('<img src="https://www.example.com/email-banner-tw.jpg" alt="banner" />').html_safe,("http://www.example.com"),:target=>"_blank"%>
 		<%else%>
-		<%=link_to ('<img src="https://redhatchallenge-rhc.rhcloud.com/assets/email-banner-en.jpg" alt="banner" />').html_safe,("http://apac.redhat.com/redhatchallenge2012/blog/en/"),:target=>"_blank"%>
+		<%=link_to ('<img src="https://www.example.com/assets/email-banner-en.jpg" alt="banner" />').html_safe,("http://www.example.com"),:target=>"_blank"%>
 		<%end%>
 						</td>
 					</tr>
@@ -40,7 +40,7 @@
 </div>
 							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-left: 0; margin-right: 0;  margin-bottom: 10px;"><%=t('confirmthanks',:locale=>@resource.language)%> <%= Time.now.year %>!</div>
 							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  margin-bottom: 0;"><b><%= link_to t("confirmclick",:locale=>@resource.language), confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></b></div>
-							<img src="https://redhatchallenge-rhc.rhcloud.com/assets/divider.jpg" width="560" height="41" />
+							<img src="https://www.example.com/divider.jpg" width="560" height="41" />
 							<div style="font-family: arial, verdana; font-size: 14px; color: #000000; line-height: 18px; padding: 0; margin-top: 0; margin-left: 0; margin-right: 0;  margin-bottom: 0;"><%=t('confirminfo').html_safe%></div>
 						</td>
 					</tr>

@@ -5,7 +5,7 @@ ActiveAdmin.setup do |config|
   # Set the title that is displayed on the main layout
   # for each of the active admin pages.
   #
-  config.site_title = "RedHat Challenge Administrator"
+  config.site_title = "WebChallenge Administrator"
   config.before_filter do
     I18n.locale = 'en-US'
   end

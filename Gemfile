@@ -1,3 +1,5 @@
+#In Development Mode uncomment source :rubygems and comment source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
+#In Production Mode uncomment source 'http://mirror1.prod.rhcloud.com/mirror/ruby/' and comment source :rubygems
 source 'http://mirror1.prod.rhcloud.com/mirror/ruby/'
 #source :rubygems
 
@@ -11,20 +13,19 @@ gem 'devise'
 gem 'activeadmin'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'css3-progress-bar-rails'
-gem 'slim-attributes'
 
 # Gems used only for development and not required
 # in production environment by default.
 #The entire section can be commented out safely to reduce the Gems required
-#group :development do
-#  gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
   # This needs to be installed so we can run Rails console on OpenShift directly
-#  gem 'minitest'
+  gem 'minitest'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-#  gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
-#end
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

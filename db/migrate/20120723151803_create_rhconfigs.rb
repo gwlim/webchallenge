@@ -15,11 +15,7 @@ class CreateRhconfigs < ActiveRecord::Migration
 
       t.timestamps
     end
-Rhconfig.create!([{:country=>"China", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
-Rhconfig.create!([{:country=>"Hong Kong",:challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
-Rhconfig.create!([{:country=>"Malaysia",:challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
-Rhconfig.create!([{:country=>"Singapore", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
-Rhconfig.create!([{:country=>"Taiwan", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
+
 add_index :rhconfigs, :country,                :unique => true
 add_index :rhconfigs, :qn_per_topic,                :unique => false
 add_index :rhconfigs, :add_diff_qn,                :unique => false
@@ -31,6 +27,10 @@ add_index :rhconfigs, :challenge_end,                :unique => false
 add_index :rhconfigs, :challenge_on,                :unique => false
 add_index :rhconfigs, :challenge_override,                :unique => false
 
+Rhconfig.create!([{:country=>"China", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
+Rhconfig.create!([{:country=>"Hong Kong",:challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
+Rhconfig.create!([{:country=>"Malaysia",:challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
+Rhconfig.create!([{:country=>"Singapore", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
+Rhconfig.create!([{:country=>"Taiwan", :challenge_start=>DateTime.new(2012,01,12,23,59), :challenge_end=>DateTime.new(2013,01,12,23,59), :challenge_override=>false, :qn_per_topic=>1, :time_limit=>60, :total_qn=>20, :add_diff_qn=>nil, :add_easy_qn=>nil, :add_norm_qn=>nil}])
   end
-
 end

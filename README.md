@@ -1,3 +1,9 @@
+=======
+webchallenge
+============
+
+Ruby on Rails based web application for creating online Test on OpenShift
+
 # Rails Sample App on OpenShift #
 Quickstart rails application for openshift.
 

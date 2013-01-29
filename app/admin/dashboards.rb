@@ -19,6 +19,8 @@ ActiveAdmin.register_page "Dashboard" do
 	  	
 	  panel "Host" do
 	    table do
+	    Host::LoadAverage.refresh
+	    Host::Memory.refresh
 	      th "Load Average"
 	      th "Memory(MB)"
 	      th "Processor"
@@ -33,8 +35,7 @@ ActiveAdmin.register_page "Dashboard" do
 	      tr
 	      td Host::LoadAverage.on_last(15).to_s
 	    end
-	    Host::LoadAverage.refresh
-	    Host::Memory.refresh
+
 	  end
 	
 	      panel "Challenge Status" do

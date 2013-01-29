@@ -1,5 +1,5 @@
 class StudentMailer < Devise::Mailer
-  def headers_for(action)
+  def headers_for(action,opts={})
     I18n.locale=@resource.language if !(@resource.language.blank?)
     email_with_name = "#{resource.first_name} #{resource.last_name} <#{resource.email}>"
     headers = {

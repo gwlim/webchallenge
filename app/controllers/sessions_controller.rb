@@ -12,6 +12,7 @@ class SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   def create
+    reset_session
 #warden have to authenticate first
     resource = warden.authenticate!(auth_options)
 	#Create Questions if not present
@@ -29,7 +30,6 @@ class SessionsController < Devise::SessionsController
     end
     signed_out = (Devise.sign_out_all_scopes ? sign_out : sign_out(resource_name))
     set_flash_message :notice, :signed_out if signed_out
-
     # We actually need to hardcode this as Rails default responder doesn't
     # support returning empty response on GET request
     respond_to do |format|

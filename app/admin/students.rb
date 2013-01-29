@@ -148,6 +148,7 @@ if Student.table_exists?
 		form do |f|
 		f.inputs "Student Details" do
 		f.input :email
+		f.input :password
 		f.input :first_name
 		f.input :last_name
 		f.input :contact_number

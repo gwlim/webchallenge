@@ -12,7 +12,6 @@ class SessionsController < Devise::SessionsController
 
   # POST /resource/sign_in
   def create
-    reset_session
 #warden have to authenticate first
     resource = warden.authenticate!(auth_options)
 	#Create Questions if not present

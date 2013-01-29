@@ -14,7 +14,29 @@ ActiveAdmin.register_page "Dashboard" do
     rs=Appconfig.find_by_id(1).registration_start
     re=Appconfig.find_by_id(1).registration_end
     columns do
+      
 	column do
+	  	
+	  panel "Host" do
+	    table do
+	      th "Load Average"
+	      th "Memory(MB)"
+	      th "Processor"
+	      tr
+	      td Host::LoadAverage.on_last(1).to_s
+	      td (Host::Memory.total/1024).to_s
+	      td Host::Processor.core(1).model_name
+	      tr
+	      td Host::LoadAverage.on_last(5).to_s
+	      td (Host::Memory.free/1024).to_s
+	      td Host::Processor.cores.to_s+" Core(s)"
+	      tr
+	      td Host::LoadAverage.on_last(15).to_s
+	    end
+	    Host::LoadAverage.refresh
+	    Host::Memory.refresh
+	  end
+	
 	      panel "Challenge Status" do
 			table do
 				  th "Challenge Mode"
@@ -78,6 +100,7 @@ ActiveAdmin.register_page "Dashboard" do
 		end
 	    end
 	end
+
   # == Render Partial Section
   # The block is rendered within the context of the view, so you can
   # easily render a partial rather than build content in ruby.

@@ -13,6 +13,7 @@ gem 'devise'
 gem 'activeadmin'
 gem 'recaptcha', :require => 'recaptcha/rails'
 gem 'css3-progress-bar-rails'
+gem 'host'
 
 # Gems used only for development and not required
 # in production environment by default.
